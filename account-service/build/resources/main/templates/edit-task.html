@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="icon" href="../../favicon.ico"/>
+
+    <title>Edit task</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tasks service</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/home">Home</a></li>
+                    <li class="active"><a href="#">Tasks </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="container">
+        <div class="col-md-6">
+        <h1>Edit your task</h1>
+        <div class="btn-group">
+            <a href="" th:method="delete" th:href="@{'/task/' + ${task.id} + '/del'}" class="btn btn-danger">Delete task</a>
+        </div>
+        <br/>
+        <form action="" th:action="@{'/task/' + ${task.id}}" th:object="${task}" method="post">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" th:field="*{title}" class="form-control" id="title" placeholder="Title"/>
+                <small id="titleHelp" class="form-text text-muted">Enter desired title of task.</small>
+            </div>
+            <div class="form-group">
+                <label for="datetime-local-input">Date and time</label>
+                <input class="form-control" th:field="*{date}" type="datetime-local" value="2011-08-19T13:45:00" id="datetime-local-input"/>
+                <small id="dateHelp" class="form-text text-muted">Enter desired date and time of task.</small>
+            </div>
+            <div class="form-group">
+                <label for="bodyTask">Task description</label>
+                <textarea class="form-control" th:field="*{body}" id="bodyTask" rows="3"></textarea>
+                <small id="descHelp" class="form-text text-muted">Enter task description.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+        </div>
+    </div>
+
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/webjars/jquery/3.2.0/jquery.min.js"></script>
+<script>window.jQuery</script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

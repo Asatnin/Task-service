@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gradle_Multiproject.iml" filepath="$PROJECT_DIR$/.idea/modules/Gradle_Multiproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gradle_Multiproject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Gradle_Multiproject_main.iml" group="Gradle_Multiproject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gradle_Multiproject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Gradle_Multiproject_test.iml" group="Gradle_Multiproject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account-service.iml" filepath="$PROJECT_DIR$/.idea/modules/account-service.iml" group="account-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account-service/account-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/account-service/account-service_main.iml" group="account-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account-service/account-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/account-service/account-service_test.iml" group="account-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app-gateway-service/app-gateway-service.iml" filepath="$PROJECT_DIR$/.idea/modules/app-gateway-service/app-gateway-service.iml" group="app-gateway-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app-gateway-service/app-gateway-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/app-gateway-service/app-gateway-service_main.iml" group="app-gateway-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app-gateway-service/app-gateway-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/app-gateway-service/app-gateway-service_test.iml" group="app-gateway-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/auth-service.iml" group="auth-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/auth-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/auth-service_main.iml" group="auth-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/auth-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/auth-service_test.iml" group="auth-service" />
+      <module fileurl="file://$PROJECT_DIR$/bookmark-service/bookmark-service.iml" filepath="$PROJECT_DIR$/bookmark-service/bookmark-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookmark-service/bookmark-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookmark-service/bookmark-service_main.iml" group="bookmark-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookmark-service/bookmark-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookmark-service/bookmark-service_test.iml" group="bookmark-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-service/eureka-service.iml" group="eureka-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-service/eureka-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-service/eureka-service_main.iml" group="eureka-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-service/eureka-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-service/eureka-service_test.iml" group="eureka-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service.iml" group="notification-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service/notification-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service/notification-service_main.iml" group="notification-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service/notification-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service/notification-service_test.iml" group="notification-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passport-service/passport-service.iml" filepath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service.iml" group="passport-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passport-service/passport-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_main.iml" group="passport-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passport-service/passport-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/passport-service/passport-service_test.iml" group="passport-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-registration.iml" filepath="$PROJECT_DIR$/.idea/modules/service-registration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookmark-service/service-registration-bookmark-service.iml" filepath="$PROJECT_DIR$/.idea/modules/bookmark-service/service-registration-bookmark-service.iml" group="bookmark-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-service.iml" filepath="$PROJECT_DIR$/.idea/modules/task-service.iml" group="task-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-service/task-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-service/task-service_main.iml" group="task-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-service/task-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/task-service/task-service_test.iml" group="task-service" />
+    </modules>
+  </component>
+</project>

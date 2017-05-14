@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="account-service_main" target="1.8" />
+      <module name="account-service_test" target="1.8" />
+      <module name="app-gateway-service_main" target="1.8" />
+      <module name="app-gateway-service_test" target="1.8" />
+      <module name="auth-service_main" target="1.8" />
+      <module name="auth-service_test" target="1.8" />
+      <module name="bookmark-service_main" target="1.8" />
+      <module name="bookmark-service_test" target="1.8" />
+      <module name="eureka-service_main" target="1.8" />
+      <module name="eureka-service_test" target="1.8" />
+      <module name="Gradle_Multiproject_main" target="1.8" />
+      <module name="Gradle_Multiproject_test" target="1.8" />
+      <module name="notification-service_main" target="1.8" />
+      <module name="notification-service_test" target="1.8" />
+      <module name="passport-service_main" target="1.8" />
+      <module name="passport-service_test" target="1.8" />
+      <module name="task-service_main" target="1.8" />
+      <module name="task-service_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
