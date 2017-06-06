@@ -1,0 +1,19 @@
+node {
+	stage('Checkout') {
+		git 'file:///home/andrey/Development/service-registration'
+	}
+	
+	stage('Clean') {
+		sh './gradlew clean build -p auth-service'
+	}
+	
+	stage('Image') {
+		dir ('auth-service') {
+			sh 'docker build -t asatnin/auth-service:latest .'
+		}
+	}
+	
+	stage('Run') {
+		docker.image("asatnin/auth-service").run('-p 5000:5000')
+	}
+}

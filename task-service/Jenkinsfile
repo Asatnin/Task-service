@@ -1,0 +1,19 @@
+node {
+	stage('Checkout') {
+		git 'file:///home/andrey/Development/service-registration'
+	}
+	
+	stage('Clean') {
+		sh './gradlew clean build -p task-service'
+	}
+	
+	stage('Image') {
+		dir ('task-service') {
+			sh 'docker build -t asatnin/task-service:latest .'
+		}
+	}
+	
+	stage('Run') {
+		docker.image("task-service/account-service").run('-p 8083:8083')
+	}
+}

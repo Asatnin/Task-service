@@ -1,0 +1,19 @@
+node {
+	stage('Checkout') {
+		git 'file:///home/andrey/Development/service-registration'
+	}
+	
+	stage('Clean') {
+		sh './gradlew clean build -p notification-service'
+	}
+	
+	stage('Image') {
+		dir ('notification-service') {
+			sh 'docker build -t asatnin/notification-service:latest .'
+		}
+	}
+	
+	stage('Run') {
+		docker.image("asatnin/notification-service").run('-p 8084:8084')
+	}
+}
