@@ -14,6 +14,6 @@ node {
 	}
 	
 	stage('Run') {
-		docker.image("asatnin/account-service").run('-p 8082:8082)
+		docker.image("asatnin/account-service").run('-p 8082:8082')
 	}
 }
