@@ -16,4 +16,8 @@ node {
 	stage('Run') {
 		docker.image("asatnin/auth-service").run('-p 5000:5000')
 	}
+
+	stage ('Final') {
+            build job: 'account-service-pipeline', wait: false
+        }
 }
