@@ -60,9 +60,12 @@ public class Application extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests()
-                .anyRequest().permitAll();
+        http.authorizeRequests()
+                .anyRequest().authenticated()
+                .and().csrf().disable();
+//        http
+//                .authorizeRequests()
+//                .anyRequest().permitAll();
 //                .antMatchers("/registration").permitAll()
 //                    .anyRequest().authenticated()
 //                .and()

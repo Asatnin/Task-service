@@ -23,15 +23,15 @@ public class WebMVCSecurity extends WebSecurityConfigurerAdapter {
     @Autowired
     private AppUserDetailsService appUserDetails;
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws  Exception {
-        auth.inMemoryAuthentication().withUser("user").password("123").roles("USER");
-    }
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        auth.userDetailsService(appUserDetails).passwordEncoder(new BCryptPasswordEncoder());
+//    @Autowired
+//    public void configureGlobal(AuthenticationManagerBuilder auth) throws  Exception {
+//        auth.inMemoryAuthentication().withUser("user").password("123").roles("USER");
 //    }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(appUserDetails).passwordEncoder(new BCryptPasswordEncoder());
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

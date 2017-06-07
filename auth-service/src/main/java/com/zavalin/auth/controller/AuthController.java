@@ -19,12 +19,14 @@ public class AuthController {
     @Autowired
     private UserRepository userRepository;
 
+    @PreAuthorize("#oauth2.hasScope('internal')")
     @RequestMapping(method = RequestMethod.GET, value = "/user/{username}")
     @ResponseBody
     public User getUser(@PathVariable("username") String username) {
         return userRepository.findUserByUsername(username);
     }
 
+    @PreAuthorize("#oauth2.hasScope('internal')")
     @RequestMapping(value = "/users/current", method = RequestMethod.GET)
     @ResponseBody
     public Principal getUser(Principal principal) {

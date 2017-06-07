@@ -36,7 +36,8 @@ public class TaskNotifController {
 
     @RequestMapping(path = "/task", method = RequestMethod.POST)
     public String addNewTask(Task task, Principal principal) {
-        if (task.getDate().isBefore(LocalDateTime.now())) {
+        if (task.getTitle() == null || task.getBody() == null
+                || task.getDate().isBefore(LocalDateTime.now())) {
             return "redirect:home";
         }
 

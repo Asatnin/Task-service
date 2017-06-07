@@ -15,12 +15,16 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-@RequestMapping(path = "/home")
 public class HomeContoller {
     @Autowired
     private TaskClient taskClient;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(path = "/", method = RequestMethod.GET)
+    public String rootPage() {
+        return "redirect:home";
+    }
+
+    @RequestMapping(path = "/home", method = RequestMethod.GET)
     public ModelAndView showHome(Principal principal) {
         String username = principal.getName();
         List<Task> tasks;
