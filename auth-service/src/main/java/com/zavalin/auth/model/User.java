@@ -12,7 +12,7 @@ import java.util.Collection;
         uniqueConstraints = @UniqueConstraint(columnNames = "username"))
 public class User implements UserDetails {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @JsonIgnoreProperties
     private long id;
 

@@ -43,4 +43,5 @@ dependencies {
     compile 'org.webjars:jquery:3.2.0'
     compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.6'
     compile 'com.h2database:h2'
+    compile 'org.postgresql:postgresql:9.4.1211'
 }
