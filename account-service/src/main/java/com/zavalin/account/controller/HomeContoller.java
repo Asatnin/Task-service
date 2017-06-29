@@ -10,9 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.security.Principal;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 @Controller
 public class HomeContoller {
@@ -33,6 +31,12 @@ public class HomeContoller {
         } catch (Exception e) {
             tasks = new ArrayList<>();
         }
+        Collections.sort(tasks, new Comparator<Task>() {
+            @Override
+            public int compare(Task o1, Task o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
 //        List<Task> tasks = new ArrayList<>();
 //        Task t1 = new Task(); t1.setId(123); t1.setTitle("Task1"); t1.setBody("I need to do task1"); t1.setDate(LocalDateTime.now());
 //        Task t2 = new Task(); t2.setId(456); t2.setTitle("Task2"); t2.setBody("I need to do task2"); t2.setDate(LocalDateTime.now());

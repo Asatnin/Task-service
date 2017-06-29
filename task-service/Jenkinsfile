@@ -16,4 +16,8 @@ node {
 	stage('Run') {
 		docker.image("task-service/account-service").run('-p 8083:8083')
 	}
+
+	stage ('Final') {
+            build job: 'notification-service-pipeline', wait: false
+        }
 }

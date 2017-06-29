@@ -30,4 +30,4 @@ server:
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO

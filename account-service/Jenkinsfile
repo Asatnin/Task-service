@@ -16,4 +16,8 @@ node {
 	stage('Run') {
 		docker.image("asatnin/account-service").run('-p 8082:8082')
 	}
+	
+	stage ('Final') {
+            build job: 'task-service-pipeline', wait: false
+        }
 }
