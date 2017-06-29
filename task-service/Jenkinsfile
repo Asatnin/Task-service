@@ -14,7 +14,7 @@ node {
 	}
 	
 	stage('Run') {
-		docker.image("task-service/account-service").run('-p 8083:8083')
+		docker.image("asatnin/task-service").run('-p 8083:8083')
 	}
 
 	stage ('Final') {
